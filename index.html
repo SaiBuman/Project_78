@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>My Family Book</title>
+</head>
+
+<body>
+    <p>My Family Book</p>
+    <img id="IM" src="fam.jpg">
+    <p id="NS">My Family</p>
+    <button value="next()">Next</button>
+    <script>
+        var images = [
+            "dad.jpg",
+            "mom.jpg",
+            "Bum.jpg",
+            "Jai.jpg"
+
+        ]
+        var Names = [
+            "Poorna Chander Marri",
+            "Kalyani Marri",
+            "Sai Buman Marri",
+            "Jai Vardhan Marri",
+        ]
+        var i = 0;
+
+        function next() {
+            document.getElementById("#IM") = src.images[i];
+            document.getElementById("#NS") = src.Names[i];
+            i++
+            if (i == 3) {
+                i = 0
+            }
+        }
+    </script>
+</body>
+
+</html>
