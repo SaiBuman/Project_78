@@ -26,8 +26,8 @@
         var i = 0;
 
         function next() {
-            document.getElementById("#IM") = src.images;
-            document.getElementById("#NS") = src.Names;
+            document.getElementById("#IM").src= images[i];
+            document.getElementById("#NS").src= Names[i];
             i++
             if (i=3) {
                 i = 0
