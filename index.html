@@ -2,12 +2,13 @@
 
 <head>
     <title>My Family Book</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <p>My Family Book</p>
-    <img id="IM" src="fam.jpg">
-    <p id="NS">My Family</p>
+    <img id="photo" src="fam.jpg">
+    <p id="member">My Family</p>
     <button onclick="next()">Next</button>
     <script>
         var images = [
@@ -17,20 +18,20 @@
             "Jai.jpg"
 
         ]
-        var Members = [
+        var Names = [
             "Poorna Chander Marri",
             "Kalyani Marri",
             "Sai Buman Marri",
-            "Jai Vardhan Marri",
+            "Jai Vardhan Marri"
         ]
         var i = 0;
 
         function next() {
-            document.getElementById("IM").src= images[i];
-            document.getElementById("NS").src= Names[i];
-            i++
-            if (i=3) {
-                i = 0
+            document.getElementById("photo").src=images[i];
+            document.getElementById("member").innerHTML=Names[i];
+            i++;
+            if (i>3) {
+                i=0;
             }
         }
     </script>
